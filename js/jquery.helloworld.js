@@ -211,7 +211,7 @@
         }
         
         function getRecentTweets(){
-          url = "http://search.twitter.com/search.json?q=%23odhd&callback=?&rpp=100";
+          url = "http://search.twitter.com/search.json?q=%23odhd13&callback=?&rpp=100";
           
         
           if(lastUpdatedTweetId){
@@ -241,7 +241,7 @@
         
         function getOldTweets() {
           if(oldTweetPointer!=null && !isDoneSearchingOldTweets){
-            url = "http://search.twitter.com/search.json?q=%23odhd&rpp=100&callback=?&max_id=" + oldTweetPointer ;
+            url = "http://search.twitter.com/search.json?q=%23odhd13&rpp=100&callback=?&max_id=" + oldTweetPointer ;
           
             $.getJSON(url, function(data) {
              // console.log(data);
